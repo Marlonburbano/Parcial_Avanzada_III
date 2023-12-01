@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LibroController;
 use App\Http\Controllers\AreaController;
+use App\Http\Controllers\LibreriaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +26,4 @@ Route::get('/davidalvear/libros', [LibroController::class,'index']
 Route::get('/davidalvear/areas', [AreaController::class,'index']
 );
 
+Route::get('/marlonburbano/presentacion',[LibreriaController::class,'index']);
