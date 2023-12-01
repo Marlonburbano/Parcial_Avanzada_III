@@ -17,23 +17,23 @@ class AreaConocimientoSeeder extends Seeder
         $datos = [
             [
                 'idArea' =>'01',
-                'descripcion' =>'Programacion',
+                'descripcionarea' =>'Programacion',
             ],
             [
                 'idArea' =>'02',
-                'descripcion' =>'IA',
+                'descripcionarea' =>'IA',
             ],
             [
                 'idArea' =>'03',
-                'descripcion' =>'Robotica',
+                'descripcionarea' =>'Robotica',
             ],
             [
                 'idArea' =>'04',
-                'descripcion' =>'Calculo',
+                'descripcionarea' =>'Calculo',
             ],
             [
                 'idArea' =>'05',
-                'descripcion' =>'Telematica',
+                'descripcionarea' =>'Telematica',
             ]
         ];
         DB::table('AreaConocimiento')->insert($datos);

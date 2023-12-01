@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LibroController;
+use App\Http\Controllers\AreaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//libros
+Route::get('/davidalvear/libros', [LibroController::class,'index']
+);
+
+//libros
+Route::get('/davidalvear/areas', [AreaController::class,'index']
+);
+
